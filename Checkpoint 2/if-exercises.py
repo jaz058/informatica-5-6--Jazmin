@@ -1,19 +1,14 @@
 def main():
-    number= int(input("Enter a integer number: "))
-    integer_number(number)
+    n= int(input("Enter a integer number: "))
+    integer_number(n)
 
-def integer_number():
-  if number > 0  
+def integer_number(n):
+    negative= (n*(-1))
+    positive=(n)
 
-
-
-
-
-def main():
-    x= int(input("Type a number: "))
-    print("Your number squared is", square (x))
-
-def square (n):
-    return n * n
-
+    if n > 0:
+     print("The absolut value is: "(positive))
+    else:
+     print("The absolut value is: ", (negative))
+      
 main()
