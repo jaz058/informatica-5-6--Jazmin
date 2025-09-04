@@ -18,5 +18,6 @@ def encode_message(text):
             new_message += char
         i +=1
     print('Encoded message:' + new_message)
+    
 
 main()
