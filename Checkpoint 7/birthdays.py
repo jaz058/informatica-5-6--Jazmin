@@ -4,10 +4,18 @@ birthdays = {
     "Jose":"19/05/2008"
 }
 print(birthdays)
-name= input("Select a name:")
+while True:
+    look = input("You are looking for: ")
 
-if name == "Luna" or "Luisa" or "Jose":
-    print(birthdays[name]) 
-else:
-    print(print(birthdays[name]))
+
+    if look in birthdays:
+        print((birthdays[look]), "is the birthday of", look)
+        break
+
+    else:
+        print ("I do not have birthday information for", look)
+        birthday = input("What is their birthday?")
+        birthdays [look] = birthday
+        print (birthdays)
+
     
